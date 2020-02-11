@@ -10,16 +10,19 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
+<body onload="load()">
     <div class="main">
         <div class="main_relogio">
             <div class="relogio">
-                <input type="text" id="interval">
-                <div class="iniciar" onclick="iniciar()">
-                    <h1><i class="material-icons">play_circle_filled</i></h1>
+                <input type="text" id="interval" disabled>
+                <div class="iniciar" id="start" onclick="iniciar()">
+                    <h1><i class="material-icons">play_arrow</i></h1>
                 </div>
-                <div class="iniciar" onclick="parar()">
-                    <h1><i class="material-icons">pause_circle_filled</i></h1>
+                <div class="iniciar" id="pause" onclick="pausar()">
+                    <h1><i class="material-icons">pause</i></h1>
+                </div>
+                <div class="iniciar" id="stop" onclick="zerar()">
+                    <h1><i class="material-icons">stop</i></h1>
                 </div>
             </div>
         </div>
